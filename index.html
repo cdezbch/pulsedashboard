@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="300">
+<meta http-equiv="refresh" content="900">
 <meta name="robots" content="noindex, nofollow">
 <title>Epic app &amp; device compliance</title>
 <style>
+ :root { --white-ink: #42526e; }
  body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; margin: 0;
         padding: 20px; color: #172b4d; background: #fff; }
  h1 { font-size: 20px; margin: 0 0 2px; }
@@ -33,6 +34,7 @@
  .stat .l { font-size: 10px; font-weight: 700; color: #6b778c;
              text-transform: uppercase; letter-spacing: .04em; }
  @media (prefers-color-scheme: dark) {
+   :root { --white-ink: #ffffff; }
    body { background: #0d1117; color: #e6edf3; }
    .card { background: #161b22; border-color: #30363d; }
    .bar { background: #30363d; }
@@ -58,11 +60,18 @@
     <div class="pills"><span class="pill behind">612 behind</span><span class="pill missing">92 not installed</span></div>
   </div>
   <div class="card">
-    <div class="app" style="color:#ffffff">Epic Canto</div>
+    <div class="app" style="color:var(--white-ink)">Epic Canto</div>
     <div class="big">123<span class="of"> / 182</span></div>
-    <div class="bar"><i style="width:68%;background:#ffffff"></i></div>
+    <div class="bar"><i style="width:68%;background:var(--white-ink)"></i></div>
     <div class="sub">68% on v11.9.2 &middot; org iPads</div>
     <div class="pills"><span class="pill behind">27 behind</span><span class="pill missing">32 not installed</span></div>
+  </div>
+  <div class="card">
+    <div class="app" style="color:#f85149">Imprivata Locker</div>
+    <div class="big">3,627<span class="of"> / 4,065</span></div>
+    <div class="bar"><i style="width:89%;background:#f85149"></i></div>
+    <div class="sub">89% on v4.4.0 &middot; org devices with Locker</div>
+    <div class="pills"><span class="pill behind">193 on v4.3.0</span><span class="pill missing">245 older</span></div>
   </div></div>
 <div class="cards">
   <div class="card wide">
@@ -79,8 +88,8 @@
     <div class="sub">flagged retired in GroundControl</div>
     <div class="pills"></div>
   </div></div>
-<div class="stamp">Updated Fri Sep 18, 4:24 PM by Pulse v3.17
- &middot; refreshes every 5 minutes &middot; dashboard data from 2026-09-18 04:24 PM<br>
+<div class="stamp">Updated Fri Sep 18, 4:35 PM by Pulse v3.19
+ &middot; page refreshes every 15 minutes &middot; dashboard data from 2026-09-18 04:30 PM<br>
  Counts only — device-level detail lives in Pulse, not on this page.</div>
 </body>
 </html>
