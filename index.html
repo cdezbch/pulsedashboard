@@ -27,6 +27,11 @@
  .behind { background: #fffae6; color: #974f0c; }
  .missing { background: #ffebe6; color: #bf2600; }
  .stamp { font-size: 11px; color: #6b778c; margin-top: 16px; }
+ .wide { flex: 2; }
+ .stats { display: flex; gap: 22px; margin: 4px 0 8px; }
+ .stat .n { font-size: 26px; font-weight: 700; line-height: 1.15; }
+ .stat .l { font-size: 10px; font-weight: 700; color: #6b778c;
+             text-transform: uppercase; letter-spacing: .04em; }
  @media (prefers-color-scheme: dark) {
    body { background: #0d1117; color: #e6edf3; }
    .card { background: #161b22; border-color: #30363d; }
@@ -47,10 +52,10 @@
   </div>
   <div class="card">
     <div class="app" style="color:#79c0ff">Epic Haiku</div>
-    <div class="big">3,189<span class="of"> / 3,921</span></div>
+    <div class="big">3,190<span class="of"> / 3,921</span></div>
     <div class="bar"><i style="width:81%;background:#79c0ff"></i></div>
     <div class="sub">81% on v11.9.2 &middot; org iPhones</div>
-    <div class="pills"><span class="pill behind">632 behind</span><span class="pill missing">100 not installed</span></div>
+    <div class="pills"><span class="pill behind">630 behind</span><span class="pill missing">101 not installed</span></div>
   </div>
   <div class="card">
     <div class="app" style="color:#ffffff">Epic Canto</div>
@@ -58,13 +63,14 @@
     <div class="bar"><i style="width:68%;background:#ffffff"></i></div>
     <div class="sub">68% on v11.9.2 &middot; org iPads</div>
     <div class="pills"><span class="pill behind">26 behind</span><span class="pill missing">33 not installed</span></div>
-  </div>
-  <div class="card">
+  </div></div>
+<div class="cards">
+  <div class="card wide">
     <div class="app" style="color:#3fb950">iOS Compliance</div>
-    <div class="big">63<span class="of"> / 6,885</span></div>
+    <div class="stats"><div class="stat"><div class="n" style="color:#3fb950">63</div><div class="l">Current</div></div><div class="stat"><div class="n" style="color:#6b778c">6,885</div><div class="l">Total</div></div><div class="stat"><div class="n" style="color:#974f0c">6,822</div><div class="l">Behind</div></div></div>
     <div class="bar"><i style="width:1%;background:#3fb950"></i></div>
-    <div class="sub">1% on iOS 27.0</div>
-    <div class="pills"><span class="pill behind">6,822 behind</span></div>
+    <div class="sub">1% on iOS
+      27.0</div>
   </div>
   <div class="card">
     <div class="app" style="color:#f85149">Retired Devices</div>
@@ -73,8 +79,8 @@
     <div class="sub">flagged retired in GroundControl</div>
     <div class="pills"></div>
   </div></div>
-<div class="stamp">Updated Fri Sep 18, 9:08 AM by Pulse v3.13
- &middot; refreshes every 5 minutes &middot; dashboard data from 2026-09-18 09:00 AM<br>
+<div class="stamp">Updated Fri Sep 18, 9:38 AM by Pulse v3.14
+ &middot; refreshes every 5 minutes &middot; dashboard data from 2026-09-18 09:29 AM<br>
  Counts only — device-level detail lives in Pulse, not on this page.</div>
 </body>
 </html>
