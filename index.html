@@ -34,11 +34,22 @@
  .stat .n { font-size: 26px; font-weight: 700; line-height: 1.15; }
  .stat .l { font-size: 10px; font-weight: 700; color: #6b778c;
              text-transform: uppercase; letter-spacing: .04em; }
+ .vers { width: 100%; border-collapse: collapse; margin-top: 8px;
+          font-size: 12px; }
+ .vers td { padding: 3px 0; border-top: 1px solid #dfe1e6; }
+ .vers tr:first-child td { border-top: 0; }
+ .vers .v { font-weight: 600; white-space: nowrap; }
+ .vers .n { text-align: right; padding-right: 10px; width: 56px; }
+ .vers .s { width: 40%; }
+ .vers .s span { display: block; height: 6px; border-radius: 3px;
+                  background: #3fb950; min-width: 2px; }
+ .vers .p { text-align: right; color: #6b778c; width: 42px; }
  @media (prefers-color-scheme: dark) {
    :root { --white-ink: #ffffff; }
    body { background: #0d1117; color: #e6edf3; }
    .card { background: #161b22; border-color: #30363d; }
    .bar { background: #30363d; }
+   .vers td { border-color: #30363d; }
  }
 </style>
 </head>
@@ -97,8 +108,9 @@
     <div class="sub">flagged retired in GroundControl</div>
     <div class="pills"></div>
   </div></div>
-<div class="stamp">Updated Thu Sep 24, 4:05 AM by Pulse v3.23
- &middot; page refreshes every 15 minutes &middot; dashboard data from 2026-09-24 04:05 AM<br>
+
+<div class="stamp">Updated Thu Sep 24, 1:02 PM by Pulse v3.24
+ &middot; page refreshes every 15 minutes &middot; dashboard data from 2026-09-24 12:55 PM<br>
  Counts only — device-level detail lives in Pulse, not on this page.</div>
 </body>
 </html>
